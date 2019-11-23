@@ -187,6 +187,7 @@ def predict(w , b , X ):
 
     return Y_prediction
 
+
 def model(X_train , Y_train , X_test , Y_test , num_iterations = 2000 , learning_rate = 0.5 , print_cost = False):
     """
     通过调用之前实现的函数来构建逻辑回归模型
@@ -203,7 +204,7 @@ def model(X_train , Y_train , X_test , Y_test , num_iterations = 2000 , learning
     返回：
         d  - 包含有关模型信息的字典。
     """
-    w , b = initialize_with_zeros(X_train.shape[0])
+    w, b = initialize_with_zeros(X_train.shape[0])
 
     parameters , grads , costs = optimize(w , b , X_train , Y_train,num_iterations , learning_rate , print_cost)
 
