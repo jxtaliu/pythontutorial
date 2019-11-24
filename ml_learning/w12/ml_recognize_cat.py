@@ -8,7 +8,7 @@ Created by liuxiang(jxta.liu@gmail.com)
 
 import numpy as np
 import matplotlib.pyplot as plt
-from ml_learning.w2.lr_utils import load_dataset
+from ml_learning.w12.lr_utils import load_dataset
 
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
 
