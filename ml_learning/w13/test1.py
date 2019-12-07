@@ -325,7 +325,7 @@ def predict(parameters, X):
 	return predictions
 
 
-#测试predict
+# 测试predict
 print("=========================测试predict=========================")
 
 parameters, X_assess = predict_test_case()
@@ -341,4 +341,4 @@ parameters = nn_model(X, Y, n_h = 4, num_iterations=50001, print_cost=True)
 # plt.title("Decision Boundary for hidden layer size " + str(4))
 
 predictions = predict(parameters, X)
-print ('准确率: %d' % float((np.dot(Y, predictions.T) + np.dot(1 - Y, 1 - predictions.T)) / float(Y.size) * 100) + '%')
+print('准确率: %d' % float((np.dot(Y, predictions.T) + np.dot(1 - Y, 1 - predictions.T)) / float(Y.size) * 100) + '%')
