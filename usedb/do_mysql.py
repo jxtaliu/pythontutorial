@@ -76,3 +76,5 @@ print(values)
 # close cursor and conn
 cursor.close()
 conn.close
+
+# test config
